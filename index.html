@@ -1,36 +1,63 @@
 <!doctype html>
 
-<html class="no-js" lang="">
+<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+        <link rel="stylesheet" href="css/style.css">
 
-    <link rel="manifest" href="">
-    <link rel="apple-touch-icon" href="">
-    <!-- Place favicon.ico in the root directory -->
+        <title>Ferret Business</title>
+    </head>
 
-    <link rel="stylesheet" href="/css/winbox.min.css">
-    <script src="/js/winbox.min.js"></script>
+    <body>
+        <main>
+            <header>
+                <h1>
+                    ferretbusiness.cyou
+                </h1>
+            </header>
 
-    <meta name="theme-color" content="#fafafa">
-</head>
+            <nav>
+                <ul>
+                    <li id="about">/about</li>
+                    <li id="contact">/contact</li>
+                    <li id="github">/repositories</li>
+                    <li id="puffer">/game-server</li>
+                    <li id="jenkins">/build-server</li>
+                </ul>
+            </nav>
 
-<body>
+            <section class="hidden">
+                <article id="about-content">
+                    <h2>
+                        About
+                    </h2>
+                    <p>
+                        Test about
+                    </p>
+                </article>
 
-<h1> Hello! </h1>
+                <article id="contact-content">
+                    <h2>
+                        Contact
+                    </h2>
+                    <p>
+                        Test contact
+                    </p>
+                </article>
 
-<a href=""> Pufferpanel </a>
-<br>
-<a href=""> Jenkin's build server </a>
+                <article id="github-content">
+                    <h3>GitHub API</h3>
+                    <ul id="userRepos" style="width: 500px"></ul>
+                </article>
+            </section>
 
-</body>
-
+            <script src="js/winbox.bundle.js"></script>
+            <script src="js/main.js"></script>
+        </main>
+    </body>
 </html>
