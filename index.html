@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
     <head>
         <meta charset="UTF-8">
@@ -8,56 +8,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
         <link rel="stylesheet" href="css/style.css">
 
         <title>Ferret Business</title>
     </head>
 
-    <body>
+    <body id="index_body">
+
         <main>
-            <header>
-                <h1>
-                    ferretbusiness.cyou
-                </h1>
-            </header>
+            <section id="main">
 
-            <nav>
-                <ul>
-                    <li id="about">/about</li>
-                    <li id="contact">/contact</li>
-                    <li id="github">/repositories</li>
-                    <li id="puffer">/game-server</li>
-                    <li id="jenkins">/build-server</li>
-                </ul>
-            </nav>
+                <header>
+                    <h1>
+                        ferretbusiness.cyou
+                    </h1>
+                </header>
 
-            <section class="hidden">
-                <article id="about-content">
-                    <h2>
-                        About
-                    </h2>
-                    <p>
-                        Test about
-                    </p>
-                </article>
-
-                <article id="contact-content">
-                    <h2>
-                        Contact
-                    </h2>
-                    <p>
-                        Test contact
-                    </p>
-                </article>
-
-                <article id="github-content">
-                    <h3>GitHub API</h3>
-                    <ul id="userRepos" style="width: 500px"></ul>
-                </article>
+                <nav>
+                    <ul>
+                        <li id="about">/about</li>
+                        <li id="contact">/contact</li>
+                        <li id="github">/projects</li>
+                        <li id="puffer">/game-server</li>
+                    </ul>
+                </nav>
             </section>
-
-            <script src="js/winbox.bundle.js"></script>
-            <script src="js/main.js"></script>
         </main>
+
+        <script src="lib/winbox.bundle.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

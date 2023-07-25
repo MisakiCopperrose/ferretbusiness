@@ -1,31 +1,113 @@
+:root {
+    --body-text-colour: rgba(220, 220, 220, 255);
+    --window-background-colour: rgba(25, 20, 45, 0.5);
+    --window-background-blur: blur(50px);
+    --window-border-colour: rgba(255, 255, 255, 0.15);
+    --window-shadow: rgba(0, 0, 0, 0.5) 2px 2px 30px;
+    --title-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+}
+
 * {
+    font-family: Libre Baskerville, serif;
+    color: var(--body-text-colour);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
-    cursor: pointer;
+li {
+    list-style-type: none;
 }
 
-body {
-    background: aquamarine;
+nav ul li {
+    cursor: pointer;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul li:hover {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-shadow: var(--title-shadow);
+}
+
+#index_body {
+    background-image: url("/images/test.png");
+    background-color: #294f60;
+    background-size: 205px;
 }
 
 main {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 10vh;
 }
 
 .hidden {
     display: none;
 }
 
+.wb-title {
+    text-align: center;
+    padding-left: 13%;
+    font-family: Libre Baskerville, serif;
+    font-variant: all-small-caps;
+    font-weight: bolder;
+    font-size: 120%;
+    color: var(--body-text-colour);
+    text-shadow: var(--title-shadow);
+}
+
+.wb-icon {
+    opacity: 50%;
+    padding-right: 5px;
+}
+
+.wb-icon:hover {
+    opacity: 80%;
+}
+
+.winbox {
+    background-color: var(--window-background-colour);
+    backdrop-filter: var(--window-background-blur);
+    -webkit-backdrop-filter: var(--window-background-blur);
+    border-radius: 20px;
+    border-style: double;
+    border-color: var(--window-border-colour);
+    border-width: 1px;
+    box-shadow: var(--window-shadow);
+}
+
+.winbox.min {
+    border-radius: 0;
+    margin-left: 50px;
+}
+
 .wb-body {
-    background: darkgray;
+    background-color: rgb(15, 12, 26, 0.2);
+    border-radius: 0 0 20px 20px;
+    color: var(--body-text-colour);
+}
+
+#main {
+    background-color: var(--window-background-colour);
+    backdrop-filter: var(--window-background-blur);
+    -webkit-backdrop-filter: var(--window-background-blur);
+    padding: 20px;
+    border-radius: 20px;
+    border-style: double;
+    border-color: var(--window-border-colour);
+    border-width: 1px;
+    box-shadow: var(--window-shadow);
 }
